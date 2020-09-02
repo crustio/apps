@@ -6,27 +6,12 @@ export default {
     code: 'Vec<u8>',
   },
   SworkerCode: 'Vec<u8>',
-  // ValidatorPrefs: {
-  //   fee: 'Compact<Perbill>'
-  // },
-  // fee: 'commission',
   WorkReport: {
     block_number: 'u64',
     used: 'u64',
     reserved: 'u64',
     cached_reserved: 'u64',
     files: 'Vec<(Vec<u8>, u64)>',
-  },
-  StakingLedger: {
-    stash: 'AccountId',
-    total: 'Compact<Balance>',
-    active: 'Compact<Balance>',
-    unlocking: 'Vec<UnlockChunk>',
-    claimed_rewards: 'Vec<EraIndex>'
-  },
-  UnlockChunk: {
-    value:'Compact<Balance>',
-    era: 'Compact<EraIndex>'
   },
   ReportSlot: 'u64',
   AddressInfo: 'Vec<u8>',
@@ -54,7 +39,6 @@ export default {
     total: 'Balance',
     used: 'Balance',
   },
-  // Payment ledger
   PaymentLedger: {
     total: 'Balance',
     paid: 'Balance',
@@ -70,7 +54,6 @@ export default {
   ISVBody: 'Vec<u8>',
   SworkerPubKey: 'Vec<u8>',
   SworkerSignature: 'Vec<u8>',
-  // TODO: remove util upgrade newest polkadot-js/api
   Releases: {
     _enum: ['V1_0_0', 'V2_0_0'],
   },

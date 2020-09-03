@@ -235,7 +235,7 @@ function createTestNetworks (t: TFunction): LinkOption[] {
     },
     {
       info: 'crust',
-      text: t<string>('rpc.crust.network', 'Maxwell CC2 (Crust Testnet, hosted by Crust Network)', { ns: 'apps-config' }),
+      text: t<string>('rpc.crust.network', 'Crust Maxwell CC2 (Crust Testnet, hosted by Crust Network)', { ns: 'apps-config' }),
       value: 'wss://api.crust.network/'
     }
   ];

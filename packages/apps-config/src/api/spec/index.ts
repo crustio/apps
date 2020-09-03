@@ -25,6 +25,7 @@ export default {
   acala,
   'centrifuge-chain': centrifugeChain,
   'cumulus-test-parachain': testPara,
+  crust,
   'darwinia-parachain': darwiniaParachain,
   dusty3: plasm,
   edgeware,
@@ -39,6 +40,5 @@ export default {
   plasm,
   'stable-poc': stablePoc,
   stable_poc: stablePoc,
-  subsocial: subsocialNode,
-  crust
+  subsocial: subsocialNode
 };

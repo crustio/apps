@@ -11,7 +11,6 @@ import chainRococo from './chains/rococo.svg';
 import chainRococoTick from './chains/rococo-tick.svg';
 import chainRococoTrack from './chains/rococo-track.svg';
 import chainRococoTrick from './chains/rococo-trick.svg';
-import chainCrust from './chains/chainCrust.svg';
 
 // defaults for the node type, assuming we don't have a specific chain, but rather match on the implementation
 import nodeAcala from './nodes/acala-circle.svg';
@@ -31,6 +30,7 @@ import nodeSubstrate from './nodes/substrate-hexagon.svg';
 import nodeKulupu from './nodes/kulupu.svg';
 import nodeLaminar from './nodes/laminar-circle.svg';
 import nodePhala from './nodes/phala.svg';
+import nodeCrust from './nodes/crust.svg';
 
 // extensions
 import extensionPolkadotJs from './extensions/polkadot-js.svg';
@@ -55,8 +55,7 @@ const chainLogos: Record<string, any> = [
   ['Rococo', chainRococo],
   ['Tick', chainRococoTick],
   ['Track', chainRococoTrack],
-  ['Trick', chainRococoTrick],
-  ['Crust Maxwell CC2', chainCrust]
+  ['Trick', chainRococoTrick]
 ].reduce((logos, [chain, logo]): Record<string, any> => ({
   ...logos,
   [(chain as string).toLowerCase()]: logo
@@ -82,7 +81,7 @@ const nodeLogos: Record<string, any> = [
   ['subsocial-node', nodeSubsocial],
   ['substrate-node', nodeSubstrate],
   ['phala-substrate-node', nodePhala],
-  ['crust', chainCrust]
+  ['crust node', nodeCrust]
 ].reduce((logos, [node, logo]): Record<string, any> => ({
   ...logos,
   [(node as string).toLowerCase().replace(/-/g, ' ')]: logo
@@ -116,7 +115,7 @@ const namedLogos: Record<string, any> = {
   subsocial: nodeSubsocial,
   substrate: nodeSubstrate,
   westend: nodePolkadot,
-  crust: chainCrust
+  crust: nodeCrust
 };
 
 // extension logos

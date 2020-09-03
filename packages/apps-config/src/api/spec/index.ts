@@ -40,5 +40,5 @@ export default {
   'stable-poc': stablePoc,
   stable_poc: stablePoc,
   subsocial: subsocialNode,
-  'crust': crust
+  crust
 };
